@@ -419,9 +419,82 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <span>Введіть імя</span>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Джон"
+              required
+            />
+          </label>
+          <div class="modal-field">
+            <label class="modal-form" for="user-email">Введіть пошту</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder="Введіть пошту"
+              id="user-email"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-form" for="user-tel">Введіть телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder="Введіть телефон"
+              name="user-tel"
+              id="user-tel"
+              required
+              value=""
+              title="+380 (96) 111-11-11"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-form" for="user-text">Введіть телефон</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Комент"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <fieldset>
+            <legend>Size</legend>
+            <input type="radio" name="size" id="big" value="big" checked />
+            <label for="big">big</label>
+            <input type="radio" name="size" id="small" value="small" />
+            <label for="small">small</label>
+          </fieldset>
+          <fieldset>
+            <legend>add</legend>
+            <input
+              type="checkbox"
+              name="add"
+              id="tomatos"
+              value="tomatos"
+              checked
+            />
+            <label for="tomatos">tomatos</label>
+            <input type="checkbox" name="add" id="cheese" value="cheese" />
+            <label for="cheese">cheese</label>
+            <input type="checkbox" name="add" id="peperoni" value="peperoni" />
+            <label for="peperoni">peperoni</label>
+          </fieldset>
+          <select name="city" id="city" class="modal-input">
+            <option value="London">London</option>
+            <option value="Paris" selected>Paris</option>
+            <option value="Novyi Rozdil">Novyi Rozdil</option>
+          </select>
+          <button type="submit">submit</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
