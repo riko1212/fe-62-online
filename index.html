@@ -367,6 +367,26 @@
         <div class="container">
           <section class="online">
             <h2 class="title online-title">Online-booking</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                class="online-input online-item"
+                name="online-name"
+                placeholder="Name*"
+              />
+              <input
+                type="tel"
+                class="online-input online-item"
+                name="online-tel"
+                placeholder="Phone*"
+              />
+              <textarea
+                name="online-message"
+                class="online-text online-item"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn online-btn">send</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
@@ -419,23 +439,31 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
         <p class="modal-title">Заголовок модального вікна</p>
         <form class="modal-form">
-          <label class="modal-label">
-            <span>Введіть імя</span>
-            <input
-              type="text"
-              class="modal-input"
-              name="user-name"
-              placeholder="Джон"
-              required
-            />
-          </label>
           <div class="modal-field">
-            <label class="modal-form" for="user-email">Введіть пошту</label>
+            <label class="modal-label" for="user-name"> Введіть імя</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="Джон"
+                required
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <label class="modal-label" for="user-email"
+            ><span> Введіть пошту </span>
+
             <input
               type="email"
               class="modal-input"
@@ -443,9 +471,13 @@
               placeholder="Введіть пошту"
               id="user-email"
             />
-          </div>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./img/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+
           <div class="modal-field">
-            <label class="modal-form" for="user-tel">Введіть телефон</label>
+            <label class="modal-label" for="user-tel">Введіть телефон</label>
             <input
               type="tel"
               class="modal-input"
@@ -458,7 +490,7 @@
             />
           </div>
           <div class="modal-field">
-            <label class="modal-form" for="user-text">Введіть телефон</label>
+            <label class="modal-label" for="user-text">Введіть телефон</label>
             <textarea
               name="user-text"
               id="user-text"
@@ -466,33 +498,24 @@
               class="modal-text"
             ></textarea>
           </div>
-          <fieldset>
-            <legend>Size</legend>
-            <input type="radio" name="size" id="big" value="big" checked />
-            <label for="big">big</label>
-            <input type="radio" name="size" id="small" value="small" />
-            <label for="small">small</label>
-          </fieldset>
-          <fieldset>
-            <legend>add</legend>
+          <div class="modal-field">
             <input
               type="checkbox"
-              name="add"
-              id="tomatos"
-              value="tomatos"
-              checked
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
             />
-            <label for="tomatos">tomatos</label>
-            <input type="checkbox" name="add" id="cheese" value="cheese" />
-            <label for="cheese">cheese</label>
-            <input type="checkbox" name="add" id="peperoni" value="peperoni" />
-            <label for="peperoni">peperoni</label>
-          </fieldset>
-          <select name="city" id="city" class="modal-input">
-            <option value="London">London</option>
-            <option value="Paris" selected>Paris</option>
-            <option value="Novyi Rozdil">Novyi Rozdil</option>
-          </select>
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="13" height="10">
+                  <use href="./img/icons.svg#icon-che"></use>
+                </svg>
+              </span>
+              Політика користування</label
+            >
+          </div>
+
           <button type="submit">submit</button>
         </form>
       </div>
