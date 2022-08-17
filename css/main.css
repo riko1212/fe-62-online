@@ -63,6 +63,11 @@ body {
   margin: -1px;
 }
 
+.contacts-link, .socials__link, .soc__list, .header > .container, .check-text span, .check-text, .pre-title {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   /* width: 100%;
   max-width: 1200px; */
@@ -74,13 +79,11 @@ body {
 }
 
 .pre-title {
-  font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.3636363636;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
 }
 .pre-title::before {
   content: "";
@@ -89,6 +92,14 @@ body {
   background-color: currentColor;
   display: block;
   margin-right: 20px;
+}
+
+.pre-title--color-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title--color-dark {
+  color: #303030;
 }
 
 .btn {
@@ -247,18 +258,12 @@ body {
   padding: 10px;
 }
 
-.check-text {
-  display: flex;
-  align-items: center;
-}
 .check-text span {
   width: 16px;
   height: 15px;
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .modal-check:checked + .check-text span {
@@ -300,29 +305,24 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header > .container {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
+.header__logo {
   margin-right: 70px;
 }
 
-.header-logo-icon {
+.logo__icon {
   fill: #303030;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-link,
-.header-tel {
+.navigation__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -330,9 +330,9 @@ body {
   color: #ffffff;
   transition: color 300ms linear;
 }
-.header-link:hover, .header-link:focus,
-.header-tel:hover,
-.header-tel:focus {
+.navigation__link:hover, .navigation__link:focus,
+.connect__tel:hover,
+.connect__tel:focus {
   color: #ff6c00;
 }
 
@@ -357,11 +357,11 @@ body {
   letter-spacing: 0.1em;
   color: #ffffff;
 } */
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
-.header-btn {
+.connect__btn {
   color: #ffffff;
   margin-left: 30px;
 }
@@ -370,7 +370,7 @@ body {
   display: flex;
 }
 
-.hero-soc {
+.soc {
   width: 90px;
   display: flex;
   align-items: flex-end;
@@ -378,32 +378,30 @@ body {
   padding-bottom: 40px;
 }
 
-.hero-list {
-  display: flex;
+.soc__list {
   transform: rotate(-90deg) translatey(100%);
   transform-origin: bottom left;
-  align-items: center;
   gap: 40px;
 }
-.hero-list::before {
+.soc__list::before {
   content: "";
   width: 60px;
   height: 1px;
   background-color: #303030;
 }
 
-.hero-link {
+.soc__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
 }
-.hero-link:hover, .hero-link:focus {
+.soc__link:hover, .soc__link:focus {
   color: #ff6c00;
 }
 
-.hero-content {
+.hero__content {
   padding: 272px 100px 206px;
   background-color: #373839;
   flex-grow: 1;
@@ -413,12 +411,11 @@ body {
   background-size: cover;
 }
 
-.hero-pre-title {
-  color: rgba(157, 164, 189, 0.6);
+.hero__pre-title {
   margin-bottom: 20px;
 }
 
-.hero-title {
+.hero__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -430,7 +427,7 @@ body {
   align-items: baseline;
 }
 
-.hero-after-title {
+.hero__after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -446,34 +443,34 @@ body {
   display: flex;
   gap: 64px;
 }
-.about-list {
-  display: flex;
-  gap: 30px;
-}
-.about-pre-title {
-  color: #303030;
+.about__pre-title {
   margin-bottom: 20px;
 }
-.about-title {
+.about__title {
   color: var(--first-title-color);
   margin-bottom: 20px;
 }
-.about-after-title {
+.about__after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 20px;
 }
-.about-text {
+.about__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 40px;
 }
-.about-btn {
+.about__btn {
   color: var(--first-btn-color);
+}
+
+.picture-list {
+  display: flex;
+  gap: 30px;
 }
 
 .prices {
@@ -605,17 +602,16 @@ body {
   padding-bottom: 130px;
 }
 
-.barbers-pre-title {
-  color: #303030;
+.barbers__pre-title {
   margin-bottom: 20px;
 }
 
-.barbers-title {
+.barbers__title {
   color: var(--first-title-color);
   margin-bottom: 44px;
 }
 
-.barbers-item-title {
+.card-list__item-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3888888889;
@@ -626,7 +622,7 @@ body {
   margin-bottom: 8px;
 }
 
-.barbers-item-text {
+.card-list__item-text {
   font-size: 14px;
   line-height: 1.3571428571;
   text-align: center;
@@ -635,21 +631,21 @@ body {
   margin-bottom: 30px;
 }
 
-.barbers-list {
+.card-list {
   display: flex;
   column-gap: 30px;
 }
 
-.barbers-item {
+.card-list__item {
   width: calc((100% - 60px) / 3);
 }
 
-.barbers-top-wrap {
+.card-list__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.barbers-top-text {
+.card-list__top-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -663,35 +659,33 @@ body {
   transition: transform 300ms linear;
   overflow: auto;
 }
-.barbers-item:hover .barbers-top-text {
+.card-list__item:hover .card-list__top-text {
   transform: translateY(0%);
 }
 
-.barbers-soc {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.barbers-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: turquoise;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color 300ms linear;
 }
-.barbers-soc-link:hover {
+.socials__link:hover {
   background-color: tomato;
 }
 
-.barbers-soc-icon {
+.socials__icon {
   fill: #ffffff;
   transition: fill 300ms linear;
 }
-.barbers-soc-link:hover .barbers-soc-icon {
+.barbers-soc-link:hover .socials__icon {
   fill: teal;
 }
 
@@ -819,8 +813,6 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  display: flex;
-  align-items: center;
 }
 .contacts-link:hover {
   color: #ffffff;

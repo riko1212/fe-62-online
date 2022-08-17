@@ -5,33 +5,34 @@
     display: flex;
     gap: 64px;
   }
-  &-list {
-    display: flex;
-    gap: 30px;
-  }
-  &-pre-title {
-    color: #303030;
+
+  &__pre-title {
     margin-bottom: 20px;
   }
-  &-title {
+  &__title {
     color: var(--first-title-color);
     margin-bottom: 20px;
   }
-  &-after-title {
+  &__after-title {
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #555555;
     margin-bottom: 20px;
   }
-  &-text {
+  &__text {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: #555555;
     margin-bottom: 40px;
   }
-  &-btn {
+  &__btn {
     color: var(--first-btn-color);
   }
+}
+
+.picture-list {
+  display: flex;
+  gap: 30px;
 }

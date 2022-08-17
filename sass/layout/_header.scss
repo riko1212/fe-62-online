@@ -4,29 +4,28 @@
   padding-top: 32px;
   padding-bottom: 32px;
   > .container {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
   }
 }
 
-.header-logo {
+.header__logo {
   margin-right: 70px;
 }
 
-.header-logo-icon {
+.logo__icon {
   fill: #303030;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-link,
-.header-tel {
+.navigation__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -61,11 +60,11 @@
   color: #ffffff;
 } */
 
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
-.header-btn {
+.connect__btn {
   color: #ffffff;
   margin-left: 30px;
 }

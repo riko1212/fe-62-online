@@ -134,16 +134,14 @@
 }
 
 .check-text {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   span {
     width: 16px;
     height: 15px;
     border: 2px solid #303030;
     border-radius: 2px;
     margin-right: 10px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     .modal-check:checked + & {
       background-color: var(--accent-color);

@@ -29,38 +29,43 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="" class="header-logo animate__animated animate__rubberBand">
-          <svg class="header-logo-icon" width="68" height="55">
+        <a
+          href=""
+          class="logo header__logo animate__animated animate__rubberBand"
+        >
+          <svg class="logo__icon" width="68" height="55">
             <use href="./img/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="https://www.google.com/" class="header-link link current"
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a
+                href="https://www.google.com/"
+                class="navigation__link link current"
                 >About</a
               >
             </li>
-            <li class="header-item">
-              <a href="./test.html" class="header-link link"
+            <li class="navigation__item">
+              <a href="./test.html" class="navigation__link link"
                 >Services and prices</a
               >
             </li>
-            <li class="header-item">
-              <a href="#barbers" class="header-link link">Barbers</a>
+            <li class="navigation__item">
+              <a href="#barbers" class="navigation__link link">Barbers</a>
             </li>
-            <li class="header-item">
-              <a href="https://www.google.com/" class="header-link link"
+            <li class="navigation__item">
+              <a href="https://www.google.com/" class="navigation__link link"
                 >Contacts</a
               >
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a href="tel:+380441111111" class="header-tel link"
+        <div class="connect header__connect">
+          <a href="tel:+380441111111" class="connect__tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn" data-modal-open>
+          <button type="button" class="connect__btn btn" data-modal-open>
             Online-booking
           </button>
         </div>
@@ -69,33 +74,35 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
+          <div class="soc">
+            <ul class="soc__list list">
+              <li class="soc__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="hero-link link"
+                  class="soc__link link"
                   >Instagram</a
                 >
               </li>
-              <li class="hero-item">
+              <li class="soc__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="hero-link link"
+                  class="soc__link link"
                   >Youtube</a
                 >
               </li>
             </ul>
           </div>
 
-          <div class="hero-content">
-            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-after-title">
+          <div class="hero__content">
+            <p class="hero__pre-title pre-title pre-title--color-light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__after-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -104,8 +111,8 @@
       </section>
       <section class="about">
         <div class="container">
-          <ul class="about-list list">
-            <li class="about-item">
+          <ul class="picture-list list">
+            <li class="picture-list__item">
               <img
                 src="./img/about-img-1.jpeg"
                 alt="haircuts"
@@ -113,7 +120,7 @@
                 height="445"
               />
             </li>
-            <li class="about-item">
+            <li class="picture-list__item">
               <img
                 src="./img/about-img-2.jpeg"
                 alt="haircuts"
@@ -122,23 +129,25 @@
               />
             </li>
           </ul>
-          <div class="about-content">
-            <p class="about-pre-title pre-title">About</p>
-            <h2 class="about-title title" data-aos="flip-down">
+          <div class="about__content">
+            <p class="about__pre-title pre-title pre-title--color-dark">
+              About
+            </p>
+            <h2 class="about__title title" data-aos="flip-down">
               Best Barbershop in your city
             </h2>
-            <p class="about-after-title">
+            <p class="about__after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
-            <p class="about-text">
+            <p class="about__text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online-booking</button>
+            <button type="button" class="about__btn btn">Online-booking</button>
           </div>
         </div>
       </section>
@@ -222,20 +231,20 @@
       </section>
       <section id="barbers" class="barbers">
         <div class="container">
-          <p class="barbers-pre-title pre-title">
+          <p class="barbers__pre-title pre-title pre-title--color-dark">
             for true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title title">Our barbers</h2>
-          <ul class="barbers-list list">
-            <li class="barbers-item">
-              <div class="barbers-top-wrap">
+          <h2 class="barbers__title title">Our barbers</h2>
+          <ul class="card-list list">
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
                 <img
                   src="./img/barbers-img-1.jpeg"
                   alt="barbers image"
                   width="370"
                   height="346"
                 />
-                <p class="barbers-top-text">
+                <p class="card-list__top-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Nobis iusto veniam necessitatibus accusantium saepe velit, ut
                   animi nemo quo, autem nulla esse itaque alias. Praesentium
@@ -243,47 +252,47 @@
                 </p>
               </div>
 
-              <h3 class="barbers-item-title">John Smith</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
-              <ul class="barbers-soc list">
-                <li class="barbers-soc-item">
-                  <a href="" class="barbers-soc-link link">
-                    <svg class="barbers-soc-icon" width="20" height="20">
+              <h3 class="card-list__item-title">John Smith</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
+              <ul class="socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./img/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a href="" class="barbers-soc-link link"></a>
+                <li class="socials__item">
+                  <a href="" class="socials__link link"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a href="" class="barbers-soc-link link"></a>
+                <li class="socials__item">
+                  <a href="" class="socials__link link"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a href="" class="barbers-soc-link link"></a>
+                <li class="socials__item">
+                  <a href="" class="socials__link link"></a>
                 </li>
               </ul>
             </li>
 
-            <li class="barbers-item">
+            <li class="card-list__item">
               <img
                 src="./img/barbers-img-2.jpeg"
                 alt="barbers image"
                 width="370"
                 height="346"
               />
-              <h3 class="barbers-item-title">Michele Doe</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+              <h3 class="card-list__item-title">Michele Doe</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
             </li>
-            <li class="barbers-item">
+            <li class="card-list__item">
               <img
                 src="./img/barbers-img-3.jpeg"
                 alt="barbers image"
                 width="370"
                 height="346"
               />
-              <h3 class="barbers-item-title">Alan Black</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+              <h3 class="card-list__item-title">Alan Black</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
             </li>
           </ul>
         </div>

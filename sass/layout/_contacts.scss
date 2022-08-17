@@ -25,8 +25,7 @@
   letter-spacing: 0.02em;
 
   color: #9da4bd;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   &:hover {
     color: #ffffff;
   }
