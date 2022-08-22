@@ -36,6 +36,9 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -71,11 +74,26 @@ body {
 .container {
   /* width: 100%;
   max-width: 1200px; */
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .pre-title {
@@ -598,8 +616,20 @@ body {
 }
 
 .barbers {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .barbers__pre-title {
@@ -633,11 +663,23 @@ body {
 
 .card-list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+  gap: 30px;
 }
 
 .card-list__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__top-wrap {
@@ -694,8 +736,20 @@ body {
   color: teal;
 } */
 .gallery {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .gallery-pre-title {
@@ -707,14 +761,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* margin: -15px; */
-  column-gap: 30px;
-  row-gap: 60px;
+  gap: 30px;
 }
 
 .gallery-item {
-  /* width: calc(100% / 4 - 30px);
-  margin: 15px; */
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .contact-wrap {

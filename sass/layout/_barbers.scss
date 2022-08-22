@@ -1,6 +1,14 @@
 .barbers {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .barbers__pre-title {
@@ -34,11 +42,19 @@
 
 .card-list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+  gap: 30px;
 }
 
 .card-list__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__top-wrap {

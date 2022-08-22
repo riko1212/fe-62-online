@@ -1,6 +1,14 @@
 .gallery {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .gallery-pre-title {
@@ -12,12 +20,15 @@
   display: flex;
   flex-wrap: wrap;
   /* margin: -15px; */
-  column-gap: 30px;
-  row-gap: 60px;
+  gap: 30px;
 }
 
 .gallery-item {
-  /* width: calc(100% / 4 - 30px);
-  margin: 15px; */
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
