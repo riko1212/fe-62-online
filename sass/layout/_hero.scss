@@ -1,13 +1,29 @@
 .hero .container {
   display: flex;
+  padding: 0;
+  @include mobile {
+    max-width: 100%;
+  }
+  @include tablet {
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .soc {
   width: 90px;
-  display: flex;
+  display: none;
   align-items: flex-end;
   padding-left: 27px;
   padding-bottom: 40px;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .soc__list {
@@ -36,17 +52,55 @@
 }
 
 .hero__content {
-  padding: 272px 100px 206px;
+  // padding: 272px 100px 206px;
+  padding: 208px 31px;
   background-color: #373839;
   flex-grow: 1;
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../img/hero-bg.jpeg);
+    url(../img/hero-bg-mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg-mob-2x.jpeg);
+  }
+  @include tablet {
+    padding: 272px 111px 237px 124px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg-tab.jpeg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/hero-bg-tab-2x.jpeg);
+    }
+  }
+  @include desktop {
+    padding: 272px 100px 206px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg.jpeg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/hero-bg-2x.jpeg);
+    }
+  }
 }
 
 .hero__pre-title {
@@ -56,19 +110,33 @@
 .hero__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 42px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
+  @include mobile {
+    font-size: 48px;
+  }
+  @include desktop {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .hero__after-title {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  max-width: 360px;
+  @include mobile {
+    max-width: 336px;
+  }
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.67;
+    max-width: 370px;
+  }
 }
